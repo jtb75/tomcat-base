@@ -1,4 +1,4 @@
-FROM harbor.ng20.org/apache/tomcat:latest
+FROM tomcat:latest
 LABEL maintainer="joe.buhr@gmail.com"
 LABEL version="1.BUILDNUMBER"
 LABEL business="BU-XYZ"
