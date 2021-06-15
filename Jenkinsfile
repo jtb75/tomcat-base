@@ -29,7 +29,6 @@ node ('jenkins-agent'){
                         echo 'Cleaning up Image..'
                         sh """
                         docker rmi $repo:$BUILD_NUMBER
-                        docker rmi $repo:latest
                         """
                 }
         }
