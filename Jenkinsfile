@@ -5,7 +5,7 @@ env.dockerImage = ''
 node ('jenkins-agent'){
         stage('Clone') {
                 echo 'Cloning Repo..'
-                git gitrepo
+                git branch: 'main', credentialsId: 'd382daa3-c83a-44c4-9788-1d245c3e8e0c', url: gitrepo
                 sh """
                 sed -i 's/BUILDNUMBER/$BUILD_NUMBER/' Dockerfile
                 """
